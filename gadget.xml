@@ -34,13 +34,10 @@
    "html" and "card" are required for all Gmail contextual gadgets. -->
   <Content type="html" view="card">
     <![CDATA[
-      <!-- Start with Single Sign-On -->
-      <script type="text/javascript" src="https://example.com/gadgets/sso.js"></script>
       <script type="text/javascript">
 
         <!-- Fetch the array of content matches. -->
         matches = google.contentmatch.getContentMatches();
-        alert(matches.length);
         var matchList = document.createElement('UL');
         var listItem;
         var extractedText;
@@ -54,6 +51,9 @@
             matchList.appendChild(listItem);
           }
         }
+        var paragraph = document.createElement('P');
+        paragraph.innerHTML = "this is a paragraph";
+        document.body.appendChild(paragraph);
         document.body.appendChild(matchList);
         gadgets.window.adjustHeight(100);
       </script>
