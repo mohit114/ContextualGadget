@@ -3,6 +3,8 @@ A contextual gadget to trigger when hello world is available in email subject or
 
 NOTE: The steps below do not result in a fully working gadget. 
       It shows up as being installed but no card is displayed when an email with "Hello World" is received. 
+      I guess manifest file is not need now as described in the example here https://developers.google.com/gmail/contextual_gadgets
+      since we can set values under configuraion section of Gmail contextual gadget extension.
       This might need a paid account i.e we need to buy a domain from google. Please go through this link
       https://stackoverflow.com/questions/43329110/is-it-possible-to-test-and-develop-gmail-contextual-gadgets-using-regular-gmail
       Any help is highly appreciated.
